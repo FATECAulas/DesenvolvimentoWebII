@@ -1,0 +1,103 @@
+/* RESET */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* IMAGEM DE FUNDO + overlay escuro */
+    background: 
+        linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+        url("https://i.pinimg.com/736x/09/e5/be/09e5be91a815703505352a7901c92ae9.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/* FORM (card moderno) */
+form {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(6px);
+    width: 100%;
+    max-width: 420px;
+    margin: 80px auto;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* TÍTULO */
+h1 {
+    color: #df3962;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.título2 {
+    display: block;
+    font-size: 14px;
+    color: #777;
+}
+
+/* CAMPOS */
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+/* LABEL */
+label {
+    color: #444;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+/* INPUTS E SELECT */
+.entrada,
+.opcoes2,
+textarea {
+    background-color: #f9f9f9;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* FOCO */
+.entrada:focus,
+.opcoes2:focus,
+textarea:focus {
+    border-color: #ff4d88;
+    outline: none;
+    background-color: white;
+    box-shadow: 0 0 8px rgba(255, 77, 136, 0.4);
+}
+
+/* TEXTAREA */
+textarea {
+    resize: none;
+    height: 90px;
+}
+
+/* BOTÃO */
+.botao {
+    background: linear-gradient(135deg, #ff4d88, #df3962);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    height: 45px;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* HOVER DO BOTÃO */
+.botao:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}

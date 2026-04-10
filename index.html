@@ -1,14 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeira Aula web II</title>
+    <title>Formulário</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
 </head>
 <body>
-    <h1>Primeira Aula Desenvolvimento Web II</h1>
-    <h2>
-        <a href="https://www.notion.so/FATEC-1ca19fccddc88057a2a0dd2e75085d2b?p=2e619fccddc881adbee0c01efdcc392f&pm=c">Acesse meu notion dessa uala! </a>
-    </h2>
+    <form action="" method="post" class="modelo1">
+    <h1>Formulário de Contato<br>
+        <span class="título2">Preencha todos os campos.</span>
+    </h1>
+
+    <div>
+        <label for="nome" class="nome">Nome :</label>
+        <input id="nome" type="text" name="nome" placeholder="Nome completo" class="entrada"/>
+    </div>
+
+    <div>
+        <label for="email" class="email">Email :</label>
+        <input id="email" type="email" name="email" placeholder="E-mail Válido" class="entrada"/>
+    </div>
+
+    <div>
+        <label for="opcoes" class="opcoes">Assunto :</label>
+        <select name="opcoes" class="opcoes2">
+            <option value=""></option>
+            <option value="Dúvidas do produto">Dúvidas do produto</option>
+            <option value="Atraso na entrega">Atraso na entrega</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="mensagem" class="mensagem">Mensagem :</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" class="entrada"></textarea>
+    </div>
+
+    <div>
+        <div class="rotulos">&nbsp;</div>
+        <input type="button" value="Enviar" class="botao"/>
+    </div>
+
+    </form>
 </body>
 </html>
